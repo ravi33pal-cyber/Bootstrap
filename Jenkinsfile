@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "ravipal33/bootstrap"
         IMAGE_TAG = "1.0"
-        DOCKER_HUB_CREDENTIALS = "docker-hub-cred"
+        DOCKER_HUB_CREDENTIALS = "dockerhub-creds"
     }
 
     stages {
