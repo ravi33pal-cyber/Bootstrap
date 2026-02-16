@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/ravi33pal-cyber/Bootstrap.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat "docker build -t %IMAGE_NAME%:%IMAGE_TAG% ."
